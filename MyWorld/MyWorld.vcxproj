@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A470EEEF-497F-4EDE-9C9A-A441CEF46B22}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MyWorld</RootNamespace>
+    <ProjectName>vWorld</ProjectName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseIntelTBB>true</UseIntelTBB>
+    <InstrumentIntelTBB>false</InstrumentIntelTBB>
+    <UseOfAtl>Static</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)Include;.\resource\;.\tbb\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;.\tbb\lib\ia32\vc11;$(LibraryPath)</LibraryPath>
+    <TargetName>vWorld</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)Include;.\resource\;.\tbb\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;.\tbb\lib\ia32\vc11;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MYWORLD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="MsgHdr.h" />
+    <ClInclude Include="Region.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="vAIBase.h" />
+    <ClInclude Include="LuaBase.h" />
+    <ClInclude Include="vAiTest.h" />
+    <ClInclude Include="vAr.h" />
+    <ClInclude Include="vBuffMgr.h" />
+    <ClInclude Include="vClient.h" />
+    <ClInclude Include="vCommon.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="vDlgSetLevel.h" />
+    <ClInclude Include="vEditCharDlg.h" />
+    <ClInclude Include="vEventArena.h" />
+    <ClInclude Include="vEvents.h" />
+    <ClInclude Include="vGameEvent.h" />
+    <ClInclude Include="vGmProtect.h" />
+    <ClInclude Include="vGui.h" />
+    <ClInclude Include="Ribbon.h" />
+    <ClInclude Include="vGuildCombat1to1Manager.h" />
+    <ClInclude Include="vGuildCombatManager.h" />
+    <ClInclude Include="vInventory.h" />
+    <ClInclude Include="vLayeredLinkMap.h" />
+    <ClInclude Include="vLog.h" />
+    <ClInclude Include="vMover.h" />
+    <ClInclude Include="vCtrl.h" />
+    <ClInclude Include="vParty.h" />
+    <ClInclude Include="vPartyManager.h" />
+    <ClInclude Include="vProject.h" />
+    <ClInclude Include="vProperties.h" />
+    <ClInclude Include="vPvpCombat.h" />
+    <ClInclude Include="vScanner.h" />
+    <ClInclude Include="vSelCharDlg.h" />
+    <ClInclude Include="vStruct.h" />
+    <ClInclude Include="vTextCmd.h" />
+    <ClInclude Include="vUser.h" />
+    <ClInclude Include="vUserManager.h" />
+    <ClInclude Include="vWorld.h" />
+    <ClInclude Include="vWorldManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="vAIBase.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="LuaBase.cpp" />
+    <ClCompile Include="vAiTest.cpp" />
+    <ClCompile Include="vBuffMgr.cpp" />
+    <ClCompile Include="vClient.cpp" />
+    <ClCompile Include="vCommon.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vEditCharDlg.cpp" />
+    <ClCompile Include="vEventArena.cpp" />
+    <ClCompile Include="vEvents.cpp" />
+    <ClCompile Include="vGmProtect.cpp" />
+    <ClCompile Include="vGui.cpp" />
+    <ClCompile Include="Ribbon.cpp" />
+    <ClCompile Include="vGuildCombat1to1Manager.cpp" />
+    <ClCompile Include="vGuildCombatManager.cpp" />
+    <ClCompile Include="vInventory.cpp" />
+    <ClCompile Include="vLayeredLinkMap.cpp" />
+    <ClCompile Include="vLog.cpp" />
+    <ClCompile Include="vMover.cpp" />
+    <ClCompile Include="vCtrl.cpp" />
+    <ClCompile Include="vMoverParam.cpp" />
+    <ClCompile Include="vParty.cpp" />
+    <ClCompile Include="vPartyManager.cpp" />
+    <ClCompile Include="vProject.cpp" />
+    <ClCompile Include="vProperties.cpp" />
+    <ClCompile Include="vPvpCombat.cpp" />
+    <ClCompile Include="vTextCmd.cpp" />
+    <ClCompile Include="vUser.cpp" />
+    <ClCompile Include="vUserManager.cpp" />
+    <ClCompile Include="vWorld.cpp" />
+    <ClCompile Include="vWorldManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vWorld.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,39 @@
+#pragma once
+
+#define	EVE_FLAG1219	(DWORD)0x00000001
+#define	EVE_FLAG0127	(DWORD)0x00000002
+#define	EVE_FLAG0214	(DWORD)0x00000004
+
+#define	MAX_EVENT		1024
+
+enum eGameEvents
+{
+	EVE_0401A, EVE_18, ENABLE_GUILD_INVENTORY, EVE_GUILDWAR, EVE_SCHOOL, EVE_SCHOOL_BATTLE, EVE_NOFLYMONSTER, EVE_NODARKON, 
+	EVE_NOGUILD, EVE_WORMON, EVE_RESPAWN, EVE_PK, EVE_PKCOST, EVE_STEAL, EVE_EVENT0913, EVE_GUILDCOMBAT, EVE_DROPITEMREMOVE, 
+	EVE_EVENT1206, EVE_EVENT1219, EVE_EVENT0127, EVE_EVENT0214, EVE_RECOMMEND, EVE_GUILDCOMBAT1TO1, EVE_ARENA, EVE_SECRETROOM,
+	EVE_RAINBOWRACE,
+};
+
+class vGameEvent
+{
+public:
+	vGameEvent::vGameEvent()
+	{
+		m_bEvent = (byte*)0x00783368;
+	}
+
+	void SetState(eGameEvents eve, byte bState )
+	{
+		m_bEvent[eve] = bState;
+	}
+
+	byte GetState(eGameEvents eve)
+	{
+		return m_bEvent[eve];
+	}
+
+
+protected:
+	byte* m_bEvent;
+};
+

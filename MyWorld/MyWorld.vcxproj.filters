@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="vCommon">
+      <UniqueIdentifier>{e849284a-2444-4433-8427-a853a0ffee9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension">
+      <UniqueIdentifier>{aa2c9d27-aea9-4323-aa5e-52b6ea0a1462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\User">
+      <UniqueIdentifier>{6704b052-7a79-4f93-9070-52e24356462c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\World">
+      <UniqueIdentifier>{3cac1c54-75d7-4c43-ac88-2e35258d7dc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\etc..">
+      <UniqueIdentifier>{b98d4644-ab41-49d8-8398-b88f93f1b913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\User\BuffMgr">
+      <UniqueIdentifier>{32da3d6a-81c2-42d5-8e5f-fbd2a52794d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\vClient">
+      <UniqueIdentifier>{40d64acb-08b7-4bc5-b58b-ea636d2bec93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\User\Obj">
+      <UniqueIdentifier>{8872db27-8f65-47f7-80fc-43eb577d6840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\etc..\FuncTextCmd">
+      <UniqueIdentifier>{4fedc928-e511-465f-bc18-78cedf04162e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\etc..\properties">
+      <UniqueIdentifier>{b2b61864-09df-4171-b2d6-c609cf901bb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{ff93b2e7-d799-4101-a787-d33c05b31ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\World\etc">
+      <UniqueIdentifier>{c999abf5-7cb0-41c2-8950-03fb9515b294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\User\GmProtect">
+      <UniqueIdentifier>{774f31e9-9a95-4790-bec3-38add57eccbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vGui">
+      <UniqueIdentifier>{1f9a2a0d-68f5-4b6e-8b2c-7e5c461bfc52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vGui\Dlg">
+      <UniqueIdentifier>{3b41414b-b734-4582-ba43-f41ac397007f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\vSystems">
+      <UniqueIdentifier>{20c11907-4862-457f-b3dc-9dff26ddcae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vGui\Main">
+      <UniqueIdentifier>{a5d12069-3da9-49fa-8785-1ae6efb3cd2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vGui\Main\Ribbon">
+      <UniqueIdentifier>{1dd0fa97-ffe3-4b52-a975-24997bc273ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\User\Inventory">
+      <UniqueIdentifier>{c66ae2b3-08aa-43a3-a4fc-a1fc3ad44a9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\vSystems\GuildCombat">
+      <UniqueIdentifier>{c6dce68e-4476-40f4-86a0-e0cc2e14118d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\vSystems\EventArena">
+      <UniqueIdentifier>{8ff12d59-bc40-4a64-9d2e-043e4ba10efb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\vSystems\Party">
+      <UniqueIdentifier>{a98cacc1-5b6f-422a-8d00-650be45bdc95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\World\etc\Layer">
+      <UniqueIdentifier>{f46856aa-93d6-4b65-b85f-9a89a2645557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vExtension\etc..\Event">
+      <UniqueIdentifier>{b45d951e-849c-41c5-bada-abc1d31ef40c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vCommon.h">
+      <Filter>vCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="vUser.h">
+      <Filter>vExtension\User</Filter>
+    </ClInclude>
+    <ClInclude Include="vUserManager.h">
+      <Filter>vExtension\User</Filter>
+    </ClInclude>
+    <ClInclude Include="vWorldManager.h">
+      <Filter>vExtension\World</Filter>
+    </ClInclude>
+    <ClInclude Include="vWorld.h">
+      <Filter>vExtension\World</Filter>
+    </ClInclude>
+    <ClInclude Include="vPartyManager.h">
+      <Filter>vExtension\vSystems\Party</Filter>
+    </ClInclude>
+    <ClInclude Include="vParty.h">
+      <Filter>vExtension\vSystems\Party</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaBase.h">
+      <Filter>vCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="vBuffMgr.h">
+      <Filter>vExtension\User\BuffMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="vMover.h">
+      <Filter>vExtension\User\Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="vClient.h">
+      <Filter>vExtension\vClient</Filter>
+    </ClInclude>
+    <ClInclude Include="vPvpCombat.h">
+      <Filter>vExtension\vSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="vCtrl.h">
+      <Filter>vExtension\User\Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="vProperties.h">
+      <Filter>vExtension\etc..\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="vStruct.h">
+      <Filter>vCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="vScanner.h">
+      <Filter>vCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="vProject.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="vTextCmd.h">
+      <Filter>vExtension\etc..\FuncTextCmd</Filter>
+    </ClInclude>
+    <ClInclude Include="vEvents.h">
+      <Filter>vExtension\vSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="vAiTest.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="vAIBase.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Region.h">
+      <Filter>vExtension\World\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="vGmProtect.h">
+      <Filter>vExtension\User\GmProtect</Filter>
+    </ClInclude>
+    <ClInclude Include="Ribbon.h">
+      <Filter>vGui\Main\Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="vLog.h">
+      <Filter>vExtension\etc..</Filter>
+    </ClInclude>
+    <ClInclude Include="vEditCharDlg.h">
+      <Filter>vGui\Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="vSelCharDlg.h">
+      <Filter>vGui\Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="vGui.h">
+      <Filter>vGui\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>vGui</Filter>
+    </ClInclude>
+    <ClInclude Include="vAr.h">
+      <Filter>vCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="vDlgSetLevel.h">
+      <Filter>vGui\Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="vInventory.h">
+      <Filter>vExtension\User\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="vGuildCombatManager.h">
+      <Filter>vExtension\vSystems\GuildCombat</Filter>
+    </ClInclude>
+    <ClInclude Include="vGuildCombat1to1Manager.h">
+      <Filter>vExtension\vSystems\GuildCombat</Filter>
+    </ClInclude>
+    <ClInclude Include="vEventArena.h">
+      <Filter>vExtension\vSystems\EventArena</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgHdr.h" />
+    <ClInclude Include="targetver.h">
+      <Filter>vGui</Filter>
+    </ClInclude>
+    <ClInclude Include="vLayeredLinkMap.h">
+      <Filter>vExtension\World\etc\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="vGameEvent.h">
+      <Filter>vExtension\etc..\Event</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="vCommon.cpp">
+      <Filter>vCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="vUser.cpp">
+      <Filter>vExtension\User</Filter>
+    </ClCompile>
+    <ClCompile Include="vUserManager.cpp">
+      <Filter>vExtension\User</Filter>
+    </ClCompile>
+    <ClCompile Include="vWorldManager.cpp">
+      <Filter>vExtension\World</Filter>
+    </ClCompile>
+    <ClCompile Include="vWorld.cpp">
+      <Filter>vExtension\World</Filter>
+    </ClCompile>
+    <ClCompile Include="vPartyManager.cpp">
+      <Filter>vExtension\vSystems\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="vParty.cpp">
+      <Filter>vExtension\vSystems\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaBase.cpp">
+      <Filter>vCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="vBuffMgr.cpp">
+      <Filter>vExtension\User\BuffMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="vMover.cpp">
+      <Filter>vExtension\User\Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="vClient.cpp">
+      <Filter>vExtension\vClient</Filter>
+    </ClCompile>
+    <ClCompile Include="vPvpCombat.cpp">
+      <Filter>vExtension\vSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="vCtrl.cpp">
+      <Filter>vExtension\User\Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="vProperties.cpp">
+      <Filter>vExtension\etc..\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="vProject.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="vTextCmd.cpp">
+      <Filter>vExtension\etc..\FuncTextCmd</Filter>
+    </ClCompile>
+    <ClCompile Include="vEvents.cpp">
+      <Filter>vExtension\vSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="vAiTest.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="vAIBase.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="vGmProtect.cpp">
+      <Filter>vExtension\User\GmProtect</Filter>
+    </ClCompile>
+    <ClCompile Include="Ribbon.cpp">
+      <Filter>vGui\Main\Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="vLog.cpp">
+      <Filter>vExtension\etc..</Filter>
+    </ClCompile>
+    <ClCompile Include="vEditCharDlg.cpp">
+      <Filter>vGui\Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="vGui.cpp">
+      <Filter>vGui\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="vInventory.cpp">
+      <Filter>vExtension\User\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="vGuildCombatManager.cpp">
+      <Filter>vExtension\vSystems\GuildCombat</Filter>
+    </ClCompile>
+    <ClCompile Include="vGuildCombat1to1Manager.cpp">
+      <Filter>vExtension\vSystems\GuildCombat</Filter>
+    </ClCompile>
+    <ClCompile Include="vEventArena.cpp">
+      <Filter>vExtension\vSystems\EventArena</Filter>
+    </ClCompile>
+    <ClCompile Include="vMoverParam.cpp">
+      <Filter>vExtension\User\Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="vLayeredLinkMap.cpp">
+      <Filter>vExtension\World\etc\Layer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vWorld.rc">
+      <Filter>vGui</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
