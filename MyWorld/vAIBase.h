@@ -68,7 +68,7 @@ protected:
 	FUNCAISTATE			m_pStateFunc;
 	vCtrl*				m_pObj;
 	DWORD				m_uParty;
-
+	 
 	//56 b
 public:
 //	DECLARE_AISTATE()
